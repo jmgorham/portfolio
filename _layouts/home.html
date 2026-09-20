@@ -1,14 +1,16 @@
 ---
-layout: archive
+layout: single
+classes: wide
 ---
 {%- assign locale = page.locale | default: layout.locale | default: site.locale %}
-{% assign target_collection = "portfolio" %}
 
 {{ content }}
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[locale].recent_posts | default: "Featured Projects" }}</h3>
+<h3 class="single__subtitle">{{ site.data.ui-text[locale].recent_posts | default: "Featured Projects" }}</h3>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
+{% assign portfolio = site.portfolio %}
+
+{% assign entries_layout = page.entries_layout | default: 'grid' %}
 <div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html locale=locale collection=target_collection sort_by=page.sort_by sort_order=page.sort_order type=entries_layout %}
+  {% include documents-collection.html locale=locale entries=portfolio type=entries_layout %}
 </div>
