@@ -1,6 +1,7 @@
 ---
 title: "Sample Project 4"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+tools: [ "a computer, probably", "the internet" ]
 header:
   image: /assets/images/sample_image.jpg
   teaser: /assets/images/sample_image.jpg

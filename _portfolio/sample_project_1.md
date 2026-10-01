@@ -1,6 +1,7 @@
 ---
 title: "Sample Project 1"
 excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+tools: [ "python", "pandas", "databricks" ]
 header:
   image: /assets/images/sample_image.jpg
   teaser: /assets/images/sample_image.jpg
