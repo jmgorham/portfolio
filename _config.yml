@@ -29,9 +29,12 @@ url: https://jmgorham.github.io
 baseurl: /portfolio
 collection: portfolio
 entries_layout: grid
+sort_by: sort_num
 
 # Build settings
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
 permalink: ./:title/
@@ -66,7 +69,7 @@ plugins:
 author:
   name   : "Jenna Gorham"
   avatar : "./assets/images/headshot_photo.png"
-  bio    : "I bring a combination of statistical rigor, technological expertise, and genuine curiosity to solve challenging problems in analytics and data science. I excel in translating raw data into actionable business insights and communicating results effectively through data storytelling and visualization."
+  bio    : "I bring a combination of statistical rigor, technological expertise, and genuine curiosity to solving challenging problems in analytics and data science. I excel in translating raw data into actionable business insights and communicating results effectively through data storytelling and visualization."
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -86,6 +89,7 @@ defaults:
       classes: 
       author_profile: false
       share: false
+      mathjax: true
 
 
 category_archive:
@@ -104,4 +108,4 @@ collections:
   portfolio:
     output: true
     permalink: ./:path/
-
+    sort_by: sort_num

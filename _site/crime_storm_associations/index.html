@@ -1,0 +1,467 @@
+
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.28.1 by Michael Rose
+  Copyright 2013-2026 Michael Rose - mademistakes.com | @mmistakes
+  Copyright 2024-2026 iBug - ibugone.com | @iBug
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js" dir="ltr">
+  <head>
+    
+<meta charset="utf-8">
+
+
+<!-- begin _includes/seo.html --><title>Crimes and Storms Association Deep Dive - Jenna Gorham - Data Analytics Professional Portfolio</title>
+<meta name="description" content="Analytical deep dive into the associations between crimes and storms using rigorous statistics.">
+
+
+  <meta name="author" content="Jenna Gorham">
+  
+  <meta property="article:author" content="Jenna Gorham">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Jenna Gorham - Data Analytics Professional Portfolio">
+<meta property="og:title" content="Crimes and Storms Association Deep Dive">
+<meta property="og:url" content="http://localhost:4000/portfolio/crime_storm_associations/">
+
+
+  <meta property="og:description" content="Analytical deep dive into the associations between crimes and storms using rigorous statistics.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/portfolio/assets/images/violin_plot_teaser.png">
+  
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2026-11-19T11:16:11-07:00">
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/portfolio/crime_storm_associations/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/portfolio/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--archive wide">
+    
+<nav class="skip-links" aria-label="Skip links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav" aria-label="Primary navigation">
+        
+        <a class="site-title" href="/portfolio/">
+          Jenna Gorham - Data Analytics Professional Portfolio
+          
+        </a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/portfolio/">
+        <img src="/portfolio/assets/images/headshot_photo.png" alt="Jenna Gorham" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/portfolio/" itemprop="url">Jenna Gorham</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I bring a combination of statistical rigor, technological expertise, and genuine curiosity to solving challenging problems in analytics and data science. I excel in translating raw data into actionable business insights and communicating results effectively through data storytelling and visualization.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="https://www.linkedin.com/in/jmgorham/" target="_blank" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/jmgorham" target="_blank" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  
+  </div>
+
+
+
+  <div class="archive">
+    
+      <h1 id="page-title" class="page__title">Crimes and Storms Association Deep Dive</h1>
+    
+    <p>This is an analytical deep dive into relationships between crimes and storms. The scope of the analysis is Miami, FL in 2024, utilizing open data from <a href="https://gis-mdc.opendata.arcgis.com/" target="_blank">Miami-Dade County</a> and the National Oceanic and Atmospheric Administration (NOAA) <a href="https://www.ncei.noaa.gov/access/storm-events-database/" target="_blank">Storm Events Database</a>.</p>
+
+<p>The first step of this project was processing, cleaning, and transforming the data to prepare it for analysis. A key component of this was joining the crimes dataset with the storm dataset in order to determine whether a given crime was associated with a storm. I defined this association as follows: a crime is associated with a storm if both the crime and the storm occurred within Miami-Dade County and the timestamp recorded for the police response to the crime incident falls between the start and stop timestamps recorded for the storm event.</p>
+
+<p>Performing this transformation required complex data manipulation logic in Python using the Pandas module. Part of this transformation is shown in the excerpt below.</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">merge_crime_and_storm_data</span><span class="p">(</span><span class="n">crime_df</span><span class="p">,</span> <span class="n">storm_df</span><span class="p">):</span>
+    <span class="c1"># Perform a cross merge on the two data sets
+</span>    <span class="n">crimes_during_storms</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">merge</span><span class="p">(</span><span class="n">crime_df</span><span class="p">,</span> <span class="n">storm_df</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s">'cross'</span><span class="p">)</span>
+
+    <span class="c1"># Filter to include rows where
+</span>    <span class="c1"># storm start timestamp &lt;= crime incident timestamp &lt;= storm end timestamp
+</span>    <span class="n">crimes_during_storms</span> <span class="o">=</span> <span class="n">crimes_during_storms</span><span class="p">.</span><span class="n">query</span><span class="p">(</span>
+        <span class="s">"BEGIN_DATE_TIME &lt;= CFSDate &lt;= END_DATE_TIME"</span><span class="p">).</span><span class="n">copy</span><span class="p">()</span>
+
+    <span class="c1"># This data set contains crimes that occurred during storms
+</span>    <span class="c1"># Record this in a new column
+</span>    <span class="n">crimes_during_storms</span><span class="p">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'DuringStorm'</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+    <span class="c1"># Select relevant crime columns and remove duplicates
+</span>    <span class="c1"># Duplicates could arise if 1 crime is associated with &gt;1 storm
+</span>    <span class="n">crimes_during_storms</span> <span class="o">=</span> <span class="n">crimes_during_storms</span><span class="p">[[</span><span class="s">'CFSNumber'</span><span class="p">,</span> <span class="s">'CFSDate'</span><span class="p">,</span>
+                                                 <span class="s">'IncidentType'</span><span class="p">,</span> <span class="s">'IBRCode'</span><span class="p">,</span>
+                                                 <span class="s">'CrimeCategory'</span><span class="p">,</span> 
+                                                 <span class="s">'DuringStorm'</span><span class="p">]</span>
+                                                <span class="p">].</span><span class="n">drop_duplicates</span><span class="p">()</span>
+
+    <span class="c1"># Left join full crime data set with this newly transformed data
+</span>    <span class="n">crime_storm_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">merge</span><span class="p">(</span><span class="n">crime_df</span><span class="p">,</span> <span class="n">crimes_during_storms</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s">'left'</span><span class="p">,</span>
+                              <span class="n">on</span><span class="o">=</span><span class="p">[</span><span class="s">'CFSNumber'</span><span class="p">,</span> <span class="s">'CFSDate'</span><span class="p">,</span> <span class="s">'IncidentType'</span><span class="p">,</span> 
+                              <span class="s">'IBRCode'</span><span class="p">,</span> <span class="s">'CrimeCategory'</span><span class="p">])</span>
+
+    <span class="c1"># Crimes not associated with storms currently have a during_storm value 
+</span>    <span class="c1"># of NaN - fill these values with 0 indicating no associated storm
+</span>    <span class="n">crime_storm_df</span><span class="p">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="s">'DuringStorm'</span><span class="p">]</span> <span class="o">=</span> \
+        <span class="n">crime_storm_df</span><span class="p">[</span><span class="s">'DuringStorm'</span><span class="p">].</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">crime_storm_df</span></code></pre></figure>
+
+<p>My analysis sought to answer two research questions:</p>
+
+<ol>
+  <li>Are crime rates higher during stormy weather?</li>
+  <li>Are property crimes more common during stormy weather?</li>
+</ol>
+
+<p>For each question, I chose an appropriate analytical approach based on a relevant statistical method and hypothesis test. After performing the statistical test, I produced a professional, scientific-quality data visualization to communicate the results clearly. The sections below include further details about these chosen analytical methodologies.</p>
+
+<h2>Question 1: Are crime rates higher during stormy weather?</h2>
+
+<p>Analytical method: Poisson means hypothesis test.</p>
+
+<p>This hypothesis test relies on a Poisson distribution, a model of the number of times a random event occurs within a time interval. The mean of a Poisson distribution is the average rate at which the event occurs. This test compares two Poisson means; that is, it compares the rates of occurrences of events across two different groups. I applied the Poisson means test to compare the crime rate during calm weather against the crime rate during storm events.</p>
+
+<p>The aggregate data used for the Poisson means test is included below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Crime Count</th>
+      <th>Total Hours</th>
+      <th>Avg Crimes per Hour</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>During Calm Weather</td>
+      <td>87,901</td>
+      <td>8584.67</td>
+      <td>10.24</td>
+    </tr>
+    <tr>
+      <td>During Storm Event</td>
+      <td>1,784</td>
+      <td>199.33</td>
+      <td>8.95</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Details of the hypothesis test are included below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Test</th>
+      <th style="text-align: left">Hypotheses</th>
+      <th style="text-align: left">Test Statistic</th>
+      <th style="text-align: left">P Value</th>
+      <th style="text-align: left">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Poisson means test for crime rates during storm events versus during calm weather</td>
+      <td style="text-align: left">\(H_0: \lambda_{storm} = \lambda_{calm}\) <br /> \(H_a: \lambda_{storm} &gt; \lambda_{calm}\)</td>
+      <td style="text-align: left">-6.006</td>
+      <td style="text-align: left">&gt;0.999</td>
+      <td style="text-align: left">Fail to reject the null hypothesis</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I produced a violin plot to illustrate these results.</p>
+
+<p><img src="http://localhost:4000/portfolio/assets/images/crime_rates_violin_chart.png" alt="Violin plot showing hourly storm rates during calm weather versus during storm events" class="full" /></p>
+
+<p>Failing to reject the null hypothesis indicates there is insufficient evidence to conclude that crime rates are higher during storm events. To the contrary, there are, on average, 8.95 crimes per hour during storm events but 10.24 crimes per hour during calm weather. Perhaps these mean rates are influenced by outliers, as the violin plot indicates that some hours of calm weather saw nearly 80 crimes per hour. Regardless, stormy weather does not appear to be a significant predictor of an increase in crime, though storm events may be meaningfully associated with crime statistics in other ways.</p>
+
+<h2>Question 2: Are property crimes more common during stormy weather?</h2>
+
+<p>Analytical method: one-sided two-proportion z-test.</p>
+
+<p>This hypothesis test uses z-distributions to compare two proportions. In this context, I was interested in the proportion of crimes that were categorized as property crimes. A property crime is a crime in which property is stolen or damaged without violence or threat of violence against people. I applied the z-test to compare the proportion of property crimes during calm weather against the proportion of property crimes during storm events.</p>
+
+<p>The aggregate data used for the two-sample z-test is included below:</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Group</td>
+      <td>Property Crimes</td>
+      <td>Other Crimes</td>
+      <td>Total Crimes</td>
+      <td>Pct Property Crimes</td>
+    </tr>
+    <tr>
+      <td>During Storm Event</td>
+      <td>461</td>
+      <td>1,323</td>
+      <td>1,784</td>
+      <td>25.84</td>
+    </tr>
+    <tr>
+      <td>During Calm Weather</td>
+      <td>19,615</td>
+      <td>68,286</td>
+      <td>87,901</td>
+      <td>22.31</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Details of the hypothesis test are included below:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Test</th>
+      <th style="text-align: left">Hypotheses</th>
+      <th style="text-align: left">Test Statistic</th>
+      <th style="text-align: left">P Value</th>
+      <th style="text-align: left">Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Two-sample z-test for proportions of property crimes during storm events versus during calm weather</td>
+      <td style="text-align: left">\(H_0: p_{storm} = p_{calm}\) <br /> \(H_a: p_{storm} &gt; p_{calm}\)</td>
+      <td style="text-align: left">3.537</td>
+      <td style="text-align: left">&lt;0.001</td>
+      <td style="text-align: left">Reject the null hypothesis</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>I produced a bar chart including error bars for measured uncertainty in proportion calculations to illustrate these results.</p>
+
+<p><img src="http://localhost:4000/portfolio/assets/images/property_crime_proportions_bar_chart.png" alt="Bar chart showing proportions of property crimes during calm weather versus during storm events" class="full" /></p>
+
+<p>Rejecting the null hypothesis indicates there is strong evidence that storm events are associated with a higher proportion of property crimes. During storm events, 25.84% of crimes committed were property crimes, while during calm weather, 22.31% of crimes committed were property crimes. This result indicates a meaningful association between weather and the types of crimes committed.</p>
+
+<p>Finally, the complete Jupyter notebook used to perform this analysis is included below. The notebook includes the full analytical scope, including data import, cleaning, processing, transformation, hypothesis testing, and visualization.</p>
+
+<iframe src="/portfolio/assets/html/crime_storm_analysis.html" width="100%" height="800px" style="border:none;"></iframe>
+
+  </div>
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+
+
+<div class="page__footer-copyright">&copy; 2026 <a href="http://localhost:4000">Jenna Gorham - Data Analytics Professional Portfolio</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+
+  <script src="/portfolio/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  </body>
+</html>

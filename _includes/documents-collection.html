@@ -1,0 +1,12 @@
+{% assign locale = include.locale | default: site.locale %}
+{% assign entries = include.entries | default: site[include.collection] | where_exp: "post", "post.hidden != true" %}
+
+{% assign entries = entries | sort: 'order' %}
+
+{% if include.sort_order == 'reverse' %}
+  {% assign entries = entries | reverse %}
+{% endif %}
+
+{%- for post in entries -%}
+  {% include archive-single.html locale=locale type=include.type %}
+{%- endfor -%}

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/portfolio/sample_project_1/</loc>
-<lastmod>2026-10-01T14:22:51-06:00</lastmod>
+<loc>http://localhost:4000/portfolio/crime_storm_associations/</loc>
+<lastmod>2026-11-19T11:16:11-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/portfolio/sample_project_2/</loc>
-<lastmod>2026-10-01T14:22:51-06:00</lastmod>
+<loc>http://localhost:4000/portfolio/hospital_performance_analysis/</loc>
+<lastmod>2026-11-19T11:16:11-07:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/portfolio/sample_project_3/</loc>
-<lastmod>2026-10-01T14:22:51-06:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/portfolio/sample_project_4/</loc>
-<lastmod>2026-10-01T14:22:51-06:00</lastmod>
+<loc>http://localhost:4000/portfolio/natural_language_sales_analytics/</loc>
+<lastmod>2026-11-19T11:16:11-07:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/portfolio/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/portfolio/assets/html/crime_storm_analysis.html</loc>
+<lastmod>2026-11-13T16:09:39-07:00</lastmod>
 </url>
 </urlset>
